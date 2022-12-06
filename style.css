@@ -1,0 +1,114 @@
+.container {
+  font-family: 'Courier New', Courier, monospace;
+  border: black solid 2px;
+  border-radius: 10px;
+  display: block;
+  padding-top: 30px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 30px;
+  margin: 100px auto;
+}
+h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(8, 82, 105);
+  margin-top: 20px;
+}
+.today-weather {
+  text-align: center;
+  border: 5px solid rgb(8, 82, 105);
+  border-radius: 50%;
+  width: 175px;
+  padding: 30px 30px;
+  margin: 60px 230px;
+  font-size: 30px;
+}
+
+h2 {
+  line-height: 1.5;
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: bolder;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.form-floating {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  width: 400px;
+  margin-left: 110px;
+  margin-top: 20px;
+  margin-right: 0px;
+}
+.submit {
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  width: 100px;
+  margin-left: 0px;
+  margin-top: 20px;
+  margin-right: 0px;
+}
+form {
+  margin-left: auto;
+  border-radius: 10px;
+}
+h3 {
+  text-align: center;
+  border: 5px solid rgb(8, 82, 105);
+  border-radius: 50%;
+  width: 140px;
+  padding: 40px 40px;
+  font-size: 17px;
+  margin: 20px 30px;
+  margin-bottom: 0;
+}
+p {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.temperature {
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+.units {
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: bolder;
+  transition: all 150ms ease-in-out;
+}
+
+.celsius {
+  color: black;
+  transition: all 150ms ease-in-out;
+  text-decoration: none;
+}
+
+hover.celsius {
+  cursor: pointer;
+}
+
+.farenhait {
+  color: black;
+  transition: all 150ms ease-in-out;
+  text-decoration: none;
+}
+
+:hover.farenhait {
+  cursor: pointer;
+}
+tran .day {
+  font-weight: bold;
+}

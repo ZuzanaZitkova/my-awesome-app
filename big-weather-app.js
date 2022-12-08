@@ -29,8 +29,16 @@ let day = days[currentDate.getDay()];
 let year = currentDate.getFullYear();
 
 function currentTime() {
-  let today = document.querySelector('h3');
+  let today = document.querySelector('#date-today');
   return (today.innerHTML = ` ${day}, ${date} ${month} ${year}`);
 }
-
 currentTime();
+function change(event) {
+  event.preventDefault();
+  let city = document.querySelector('#city-name');
+  let searchCity = document.querySelector('#city-form');
+  city.innerHTML = searchCity.value;
+}
+
+let form = document.querySelector('form');
+form.addEventListener('submit', change());

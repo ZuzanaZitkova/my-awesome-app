@@ -1,5 +1,3 @@
-const { default: axios } = require('axios');
-
 let currentDate = new Date();
 let days = [
   'Sunday',
@@ -12,7 +10,6 @@ let days = [
 ];
 
 let months = [
-  'December',
   'January',
   'February',
   'March',
@@ -22,19 +19,18 @@ let months = [
   'July',
   'August',
   'September',
-  'November'
+  'November',
+  'December'
 ];
 
-let hour = currentDate.getHours();
-let minutes = currentDate.getMinutes();
 let date = currentDate.getDate();
-let month = months[currentDate.getMonth()];
+let month = months[currentDate.getMonth() - 1];
 let day = days[currentDate.getDay()];
 let year = currentDate.getFullYear();
 
 function currentTime() {
-  let today = document.querySelector('#date-today');
-  return (today.innerHTML = `${hour}:${minutes} ${day}, ${date} ${month} ${year}`);
+  let today = document.querySelector('h3');
+  return (today.innerHTML = ` ${day}, ${date} ${month} ${year}`);
 }
 
 currentTime();

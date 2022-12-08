@@ -72,8 +72,10 @@ button:hover {
   font-weight: bolder;
 }
 .date {
+  font-size: 20px;
   text-align: center;
-  margin-left: 90px;
+  margin-left: -40px;
+  width: 350px;
 }
 .weather-pic {
   text-align: center;

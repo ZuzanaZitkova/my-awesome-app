@@ -1,4 +1,5 @@
 .container {
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
   margin: 100px auto;
   width: 750px;
@@ -8,16 +9,17 @@
   padding-left: 100px;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: red;
-  background-image: radial-gradient(circle at top right, yellow, #f06d06 50%);
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
 }
 
 form {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
-  margin: 0px 80px 0px 0px;
+  margin-left: -40px;
   margin-bottom: 30px;
   padding: 10px;
+  width: 650px;
+  padding-left: 5px;
 }
 
 .form {
@@ -38,6 +40,9 @@ form {
   background-color: white;
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: lighter;
 }
 button {
   padding-top: 5px;
@@ -47,6 +52,9 @@ button {
   border-width: 2px;
   border-radius: 10px;
   margin-left: 50px;
+  padding-left: 10px;
+  padding-right: 5px;
+  font-weight: lighter;
 }
 button:hover {
   background-color: rgb(11, 91, 113);
@@ -61,17 +69,19 @@ button:hover {
 .main-highlight {
   text-align: center;
   margin-left: 0px;
+  font-weight: bolder;
 }
 .date {
   text-align: center;
-  margin-left: 70px;
+  margin-left: 90px;
 }
 .weather-pic {
   text-align: center;
-  margin-left: 70px;
+  margin-left: 110px;
 }
 .temperature {
-  margin-left: 70px;
+  margin-left: 90px;
+  font-weight: bolder;
 }
 
 .col-7 {
@@ -80,13 +90,20 @@ button:hover {
   text-align: center;
 }
 .humidity {
-  margin-left: 80px;
+  margin-left: 90px;
+  font-size: 20px;
+  font-weight: lighter;
 }
 
 .wind {
-  margin-left: 80px;
+  margin-left: 90px;
+  font-size: 20px;
+  font-weight: lighter;
 }
 .prediction {
-  margin-left: 80px;
-  width: 200px;
+  margin-left: 100px;
+  width: 250px;
+  font-weight: lighter;
+  font-size: 18px;
+  padding: 5px 5px;
 }

@@ -34,29 +34,15 @@ function currentTime() {
 }
 currentTime();
 
-function change(event) {
+let button = document.querySelector('form');
+console.log(button);
+
+function changeCityName(event) {
+  let city = document.querySelector('#city-name');
+  let input = document.querySelector('#city-form');
   event.preventDefault();
-  let city = document.querySelector('#city-name');
-  let searchCity = document.querySelector('#city-form');
-  city.innerHTML = searchCity.value;
+  city.innerHTML = input.value;
 }
 
-let form = document.querySelector('form');
-form.addEventListener('submit', change());
+button.addEventListener('submit', changeCityName);
 
-function showTemperature(response) {
-  console.log();
-  let temperature = Math.round(response.data.main.temp);
-  let unit = Document.querySelector('#temp');
-  unit.innerHTML = temperature;
-}
-function showPlace(position) {
-  let city = document.querySelector('#city-name');
-  let unit = 'metric';
-  let apiKey = '445905dadb3d2b0c6f1b916c9d0e3860';
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&unit=${unit}`;
-  axios.get(apiUrl).then(showTemperature);
-}
-
-showPlace();
-  

@@ -31,8 +31,9 @@ form {
   width: 200px;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin-bottom: 30px;
 }
-.submit {
+#submit {
   border: solid;
   border-color: rgb(11, 91, 113);
   border-radius: 10px;
@@ -61,35 +62,36 @@ button:hover {
   color: white;
 }
 
-.submit:hover {
+#submit:hover {
   background-color: rgb(11, 91, 113);
   color: white;
 }
 
 .main-highlight {
   text-align: center;
-  margin-left: 0px;
+  margin: 30px auto;
+  margin-left: -10px;
   font-weight: bolder;
 }
 .date {
   font-size: 20px;
   text-align: center;
-  margin-left: -60px;
+  margin-left: -90px;
   width: 400px;
 }
 
 .weather-pic {
   text-align: center;
-  margin-left: 110px;
+  margin-left: 80px;
 }
 .temperature {
-  margin-left: 90px;
+  margin-left: 70px;
   font-weight: bolder;
 }
 
 .col-7 {
-  margin-top: 50px;
-  margin-left: 70px;
+  margin-top: 20px;
+  margin-left: 80px;
   text-align: center;
 }
 .humidity {
